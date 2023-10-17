@@ -1,0 +1,70 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:times new roman;
+}
+body{
+	background:dodgerblue;
+	}
+.container{
+height: 60vh;
+    width: 100%;
+    background: white;
+    margin-top: 100px;
+    border-radius:8px ;
+    position: relative;
+    align-items: center;
+    text-align: center;
+}
+
+.input-field input{
+padding:4px;
+border:1px solid limegreen;
+border:none;
+outline:none;
+border-bottom:1px solid limegreen;
+margin:10px;
+}
+.btn input {
+    padding: 4px;
+    border-radius: 8px;
+    background: dodgerblue;
+    color: white;
+    border: 1px solid white;
+}
+#submit{
+padding:4px;
+width:100px;
+margin-top:10px;
+border-radius:8px;
+border:none;
+outline:none;
+background:dodgerblue;
+}
+#submit:hover{
+width: 80px;
+height:80px;
+border:7px solid #fff;
+border-top-color:blue;
+border-radius: 50%;
+animation: spinner 0.3s linear infinite;
+background: white;
+align-items: center;
+text-align: center;
+
+}
+.btn{
+margin-top:10px;
+}
+@keyframes spinner {
+    from{
+
+    }
+    to{
+    transform: rotate(360deg);
+    }
+}
+a {
+    color: limegreen;
+}

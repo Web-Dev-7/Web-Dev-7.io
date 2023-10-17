@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+}
+body {
+    background: dodgerblue;
+}
+.wrapper {
+    height: 60vh;
+    width: 100%;
+    background: white;
+    margin-top: 100px;
+    border-radius:8px ;
+    position: relative;
+    align-items: center;
+    text-align: center;
+}
+.input-field input{
+    margin-top:10px;
+    padding: 4px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid limegreen;
+}
+#submit {
+    background: dodgerblue;
+    padding: 5px;
+    width: 100px;
+    border-radius: 8px;
+    color: white;
+    outline: none;
+    border: none;
+    margin-top: 10px;
+}
+#submit:hover {
+    width: 80px;
+height:80px;
+border:7px solid #fff;
+border-top-color:blue;
+border-radius: 50%;
+animation: spinner 0.3s linear infinite;
+background: white;
+align-items: center;
+text-align: center;
+
+}
+@keyframes spinner {
+    from{
+
+    }
+    to{
+    transform: rotate(360deg);
+    }
+}
+a {
+    color: limegreen;
+}

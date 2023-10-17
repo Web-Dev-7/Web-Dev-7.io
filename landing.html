@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>web Dev</title>
+<link rel="stylesheet"href="landing.css">
+<link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <nav>
+    
+    <ul class="menu">
+      <li class="logo"><a href="#">Web Dev</a></li>
+      <li class="item"><a href="#">Home</a></li>
+      <li class="item"><a href="#">About</a></li>
+      <li class="item has-submenu">
+        <a tabindex="0">Services</a>
+        <ul class="submenu">
+          <li class="subitem"><a href="#">Learn to code </a></li>
+          <li class="subitem"><a href="#">code yourself</a></li>
+          <li class="subitem"><a href="#"></a></li>
+          <li class="subitem"><a href="#"></a></li>
+        </ul>
+      </li>
+      <li class="item"><a href="#">Blog</a></li>
+      <li class="item"><a href="#">Contact</a>
+      </li>
+      <li class="item button"><a href="form.html">Log In</a></li>
+      <li class="item button secondary"><a href="#">Sign Up</a></li>
+      <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+    
+  <li>      
+    </ul>
+     
+     </nav>
+     <h3>welcome <span id="name"></span></h3>
+     
+
+  <div class="search">
+      <i class="fa fa-search"id="search"></i><input type="search" name="search" id="" value="" placeholder="search e.g  HTMl,css,JavaScript"/>
+  </div><br><br><br>
+<div class="wrapper"id="html">
+<h1>HTML</h1>
+<img src="">
+<button class="btn">Learn HTML</button><br /><br />
+<button>HTML editor</button><br /><br />
+<button>Get cerified</button><br />
+</div><br /><br />
+<div class="wrapper"id="css">
+    <h1>CSS</h1>
+    <img src="" alt="" />
+    <button type="submit">Learn css</button><br /><br />
+    <button type="">css editor</button><br /><br />
+    <button type="submit">Get certified</button>
+    <br /><br />
+</div><br /><br />
+<div class="wrapper"id="js">
+    <h1>JavaScript</h1>
+    <img src="" alt="" />
+    <button type="submit">Learn JavaScript</button><br /><br />
+    <button type="submit">Js editor</button><br /><br />
+    <button type="submit">Get certified</button>
+</div><br /><br />
+<div class="wrapper"id="php">
+    <h1>PHP</h1>
+    <img src="" alt="" />
+    <button type="submit">Learn PHP</button><br /><br />
+    <button type="submit">Get Certified</button>
+</div><br /><br />
+    <div class="wrapper"id="py">
+    <h1>Python</h1>
+    <img src="" alt="" />
+    <button type="submit">Learn Python</button><br /><br />
+    <button type="submit">Get Certified</button>
+</div><br /><br />
+<div class="wrapper"id="sql">
+    <h1>SQL</h1>
+    <img src="" alt="" />
+    <button type="submit">Learn SQL</button><br /><br />
+    <button type="submit">Get Certified</button><br /><br />
+</div>
+<div class="wrapper">
+    <h1>PHP</h1>
+    <img src="" alt="" />
+    <button type="submit">Learn PHP</button><br /><br />
+    <button type="submit">Get Certified</button>
+</div>
+<script type="text/javascript" charset="utf-8">
+    
+const toggle = document.querySelector(".toggle");
+const menu = document.querySelector(".menu");
+const items = document.querySelectorAll(".item");
+
+/* Toggle mobile menu */
+function toggleMenu() {
+  if (menu.classList.contains("active")) {
+    menu.classList.remove("active");
+    toggle.querySelector("a").innerHTML = "<i class='fas fa-bars'></i>";
+  } else {
+    menu.classList.add("active");
+    toggle.querySelector("a").innerHTML = "<i class='fas fa-times'></i>";
+  }
+}
+
+/* Activate Submenu */
+function toggleItem() {
+  if (this.classList.contains("submenu-active")) {
+    this.classList.remove("submenu-active");
+  } else if (menu.querySelector(".submenu-active")) {
+    menu.querySelector(".submenu-active").classList.remove("submenu-active");
+    this.classList.add("submenu-active");
+  } else {
+    this.classList.add("submenu-active");
+  }
+}
+
+/* Close Submenu From Anywhere */
+function closeSubmenu(e) {
+  if (menu.querySelector(".submenu-active")) {
+    let isClickInside = menu
+      .querySelector(".submenu-active")
+      .contains(e.target);
+
+    if (!isClickInside && menu.querySelector(".submenu-active")) {
+      menu.querySelector(".submenu-active").classList.remove("submenu-active");
+    }
+  }
+}
+/* Event Listeners */
+toggle.addEventListener("click", toggleMenu, false);
+for (let item of items) {
+  if (item.querySelector(".submenu")) {
+    item.addEventListener("click", toggleItem, false);
+  }
+  item.addEventListener("keypress", toggleItem, false);
+}
+document.addEventListener("click", closeSubmenu, false);
+
+const name= window.prompt('what is your name?');
+
+document.getElementById('name').innerText = name;
+
+</script>
+</body>
+</html>

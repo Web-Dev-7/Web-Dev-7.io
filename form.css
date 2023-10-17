@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:times new roman;
+}
+body{
+background:dodgerblue;
+}
+.container {
+    height: 60vh;
+    width: 100%;
+    background: white;
+    margin-top: 100px;
+    border-radius:8px ;
+    position: relative;
+    align-items: center;
+    text-align: center;
+}
+.input-field input {
+  margin-top:10px;
+    padding: 4px;
+border:none;
+overflow: hidden;
+  border-bottom: 1px solid limegreen;
+}
+.btn input {
+    padding: 4px;
+    border-radius: 8px;
+    background: dodgerblue;
+    color: white;
+    border: 1px solid white;
+}
+    #submit{
+outline:none;
+border:none;
+padding:7px;
+width:100px;
+}
+#submit:hover{
+width: 80px;
+height:80px;
+border:7px solid #fff;
+border-top-color:blue;
+border-radius: 50%;
+animation: spinner 0.3s linear infinite;
+background: white;
+align-items: center;
+text-align: center;
+
+}
+.btn{
+margin-top:10px;
+}
+@keyframes spinner {
+    from{
+
+    }
+    to{
+    transform: rotate(360deg);
+    }
+}
+a {
+    color: limegreen;
+}
