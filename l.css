@@ -1,0 +1,57 @@
+*{
+	margin:0;
+	padding:0;
+	border-box: box-sizing;
+	}
+	body {
+		width:100%;
+		height: auto;
+		display: block;
+		}
+		.container {
+			background:whitesmoke;
+		max-width:470px;
+		height: 80vh;
+		border-radius:4px;
+		display:block;
+		text-align: center;
+		align-items: Center;
+		font-size:23px;
+		}
+		h1{
+			margin-top:23px;
+			align-items: Center;
+			text-align: Center;
+			color:#000E85;
+			}
+			.input-field input {
+				width:80%;
+				height:46px;
+				margin-top:18px;
+				border-radius:8px;
+				border:1px solid #000E89;
+				}
+				.button input {
+					width:90%;
+					height:50px;
+					border-radius:8px;
+					background:#224CA9;
+					color:whitesmoke;
+					font-size:23px;
+					border:1px solid white;
+					}
+					a{
+						color:#000E85;
+						}
+			IMG{
+				width:105px;
+				height:103px;
+				align-items:;center;
+				}
+				::placeholder {
+					align-items: center;
+					text-align: Center;
+					}
+					small{
+						display: none;
+						}

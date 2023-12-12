@@ -1,244 +1,263 @@
 *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+	margin:0;
+	padding:0;
+	border-box:box-sizing;
+	}
+	body{
+		background:white;
+		height:100vh;
+		width:100%;
+		display: block;
+		}
+		@media only screen and (max-width: 600px) {
+		}
+		
+	.web{
+		background-color:white;
+	background-size:cover;
+		height:100vh;
+		width:100%;
+		margin-top:25px;
+		position: relative;
+		align-items:center;
+		text-align:center;
+		}
+		h2{
+			color:black;
+			}
+			.con{
+			height:100vh;
+			margin-top:101px;
+				}
+				header{
+					position: relative;
+					background:#001075;
+					width:100%;
+					border-radius:1.2%;
+					height:auto;
+					}
+					input{
+						width:90%;
+						height:42px;
+						border-radius:8px;
+						padding:9px;
+						}
+				::placeholder {
+padding:12px;
+font-size: 14px;
 }
-body{
-    font-family: 'Times New Roman', Times, serif;
-    width: 100%;
-    height: 100px;
-    background: white;    
+						line1{
+       height: 40vh;
+       width: 100%;
+  }
+  main{
+       width: 100%;
+       height: 100vh;
+  }
+  .main1{
+       float: right;
+       width: 80%;
+       box-sizing: border-box;
+  }
+  .icon{
+       background:;
+       width: 61px;
+       height: 50px;
+       margin-right: 10px;
+  }
+    /* nav bar  section */
+    .search{
+     color: #fff;
+     margin-top: 7px;
+     margin-left: 37px;
+     cursor: pointer;
+     width: 50px;
+     height: 40px;
+    }
+ .open{
+      float:right ;
+      color:white;
+      font-weight: 4px;
+      transition:all 1.3s ease;
+      margin-top:8px;
+ }
+.sidenav{
+     height: 90vh;
+     width: 0;
+     position: fixed;
+     z-index: 1;
+     top: 0;
+     left: 0;
+     background: #000E89;
+     overflow-x: hidden;
+     padding-top: 60px;
+     transition:  all 2.5s ease;
+     float:right;
 }
-.web{
-height: 100vh;
+.sidenav a{
+     padding: 8px 8px 8px 32px;
+     margin-bottom: 20px;
+     text-decoration: none;
+     font-size: 25px;
+     color: white;
+     display: block;
+     transition:  all 0.3s ease;
+     text-align: center;
+     align-items: center;
+     position: relative;
+}
+.sidenav .closebtn{
+     position: absolute;
+     top: 0;
+     right: 25px;
+     font-size: 36px;
+     margin-left: 50px;
+}
+.sidenav a:hover{
+     color: #f1f1f1;
+}
+header nav h1{
+     font-size:40px;
+     color: whitesmoke;
+     font-family: Helvetica, sans-serif;
+     padding-top:9px;
+}
+.webdev{
+	position: relative;
+	bottom:1.5px;
+}
+.close{
+display:none;
+}
+.sidenav a:hover{
+transition:all 1.5 ease;
+background:blue;
+}
+.about {
+	background:white;
+	height:100vh;
+	width:100%;
+	position: relative;
+		align-items:center;
+		text-align:center;
+		font-size:23px;
+	}
+	button {
+		width:159px;
+		height:49px;
+		margin-top:45px;
+		text-align: center;
+		align-items: center;
+		background: white;
+		border:2px solid blue;
+		border-radius:9px;
+		color:blue;
+		font-size:21px;
+		}
+		.btn{
+			width:159px;
+		height:49px;
+		margin-top:45px;
+		text-align: center;
+		align-items: center;
+		background: blue;
+		border:2px solid blue;
+		border-radius:9px;
+		color: white;
+		font-size:21px;
+			}
+			h3{
+				margin-top:19px;
+				font-family: Helvetica, sans-serif;
+				font-size:40px;
+				}
+				h4{
+font-size:37px;
+padding-inline:20px;
+}
+
+				.team {
+					border-radius:50%;
+					}
+					#DevOps {
+margin-top:12%;
+margin-bottom:10%;
 
 }
-nav {
-  background: #222;
-  padding: 0 15px;
- }
- a {
-  color: white;
-  text-decoration: none;
- }
- .menu,
- .submenu {
-  list-style-type: none;
- }
- .logo {
-  font-size: 20px;
-  padding: 7.5px 10px 7.5px 0;
- }
- .item {
-  padding: 10px;
- }
- .item.button {
-  padding: 9px 5px;
- }
- .item:not(.button) a:hover,
- .item a:hover::after {
-  color: #ccc;
- }
- /* Mobile menu */
- .menu {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
- }
- .menu li a {
-  display: block;
-  padding: 15px 5px;
- }
- .menu li.subitem a {
-  padding: 15px;
- }
- .toggle {
-  order: 1;
-  font-size: 20px;
- }
- .item.button {
-  order: 2;
- }
- .item {
-  order: 3;
-  width: 100%;
-  text-align: center;
-  display: none;
- }
- .active .item {
-  display: block;
- }
- .button.secondary {
-  /* divider between buttons and menu links */
-  border-bottom: 1px #444 solid;
- }
- /* Submenu up from mobile screens */
- .submenu {
-  display: none;
- }
- .submenu-active .submenu {
-  display: block;
- }
- .has-submenu i {
-  font-size: 12px;
- }
- .has-submenu > a::after {
-  font-family: "Font Awesome 5 Free";
-  font-size: 12px;
-  line-height: 16px;
-  font-weight: 900;
-  content: "\f078";
-  color: white;
-  padding-left: 5px;
- }
- .subitem a {
-  padding: 10px 15px;
- }
- .submenu-active {
-  background-color: #111;
-  border-radius: 3px;
- }
- 
- /* Tablet menu */
- @media all and (min-width: 700px) {
-  .menu {
-    justify-content: center;
-  }
-  .logo {
-    flex: 1;
-  }
-  .item.button {
-    width: auto;
-    order: 1;
-    display: block;
-  }
-  .toggle {
-    flex: 1;
-    text-align: right;
-    order: 2;
-  }
-  /* Button up from tablet screen */
-  .menu li.button a {
-    padding: 10px 15px;
-    margin: 5px 0;
-  }
-  .button a {
-    background: #0080ff;
-    border: 1px royalblue solid;
-  }
-  .button.secondary {
-    border: 0;
-  }
-  .button.secondary a {
-    background: transparent;
-    border: 1px #0080ff solid;
-  }
-  .button a:hover {
-    text-decoration: none;
-  }
-  .button:not(.secondary) a:hover {
-    background: royalblue;
-    border-color: darkblue;
-  }
- }
- /* Desktop menu */
- @media all and (min-width: 960px) {
-  .menu {
-    align-items: flex-start;
-    flex-wrap: nowrap;
-    background: none;
-  }
-  .logo {
-    order: 0;
-  }
-  .item {
-    order: 1;
-    position: relative;
-    display: block;
-    width: auto;
-  }
-  .button {
-    order: 2;
-  }
-  .submenu-active .submenu {
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 68px;
-    background: #111;
-  }
-  .toggle {
-    display: none;
-  }
-  .submenu-active {
-    border-radius: 0;
-  }
- }
- 
- 
-button {
-	padding: 10px;
-	background: dodgerblue;
-	
+.co{
+	border-radius:8px;
+	}
+@media only screen and (min-width: 600px) {
+.open{
+		display: none;
+		}
+		.laptop{
+			float: right;
+	color:white;
+			}
+			.laptop a{
+				color:white;
+				margin-top:23px;
+				}
+				.log{
+					background:#02009B;
+					float:right;
+					width:156px;
+					height:45px;
+					border-radius:9px;
+					color:white;
+					margin-bottom:56px;
+					}
+					.header{
+						position: relative;
+					background:#001075;
+					width:100%;
+					border-radius:1.2%;
+					height:32vh;
+						}
+						IMG{
+							width:100%;
+							height:300px;
+							margin-top:22px;
+							}
+							.BTN{
+								margin-top:23px;
+								}
+								.main{
+									width:100%;
+									}
+									.yel{
+										width:100%;
+										}
+						
 }
-button:hover{
-	border: 2px solid dodgerblue;
-
-background: transparent;
-}
-.content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.con{
- display: flex;
- justify-content: center;
- align-items: center;
-}
-.about{
-    margin-left: 30px;
-    margin-right: 30px;
-}
-button{
-    padding: 10px;
-    border-radius: 5px;
-}
-input{
-width: 250px;
-padding: 12px;
-border: 1px solid black;
-border-top-right-radius: 10px;
-border-bottom-right-radius: 10px;
-}
-.material-icons{
-width: 50px;
-padding: 10px;
-text-align: center;
-background: lightgrey;
-border-top-left-radius: 20px;
-border-bottom-left-radius: 20px;
-}
-.text{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-span{
-    font-size: 25px;
-    display: flex;
-justify-content: center;
-align-items: center;
-margin-top: 230px;
-
-}
-.project{
-    padding: 5px;
-}
-.container{
-width: 300px;
-height: 380px;
-box-shadow: 7px 22px 32px 0px ;
-border-radius: 10px;
-}
+	@media only screen and (max-width: 600px) {
+.laptop{
+		display:none;
+		}
+		}
+		.main{
+			background:#000E85;
+			height:50vh;
+			width:100%;
+			align-items: center;
+			text-align: Center;
+			margin-top:23px;
+			}
+			.main button {
+				width:158px;
+				height:45px;
+				border-radius:8px;
+				background: blue;
+				color:white;
+				border:1px solid #000E85;
+				margin-top:18px;
+				}
+				.yel{
+					background:#2B24D4;
+			height:50vh;
+			width:100%;
+			align-items: center;
+			text-align: Center;
+			margin-top:23px;
+					}
